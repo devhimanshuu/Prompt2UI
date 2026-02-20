@@ -108,7 +108,7 @@ export const generateScreens = inngest.createFunction(
         `.trim();
 
 			const { object } = await generateObject({
-				model: groq("moonshotai/kimi-k2-instruct"),
+				model: groq("moonshotai/kimi-k2-instruct") as any,
 				schema: AnalysisSchema,
 				system: ANALYSIS_PROMPT,
 				prompt: analysisPrompt,
@@ -166,7 +166,7 @@ export const generateScreens = inngest.createFunction(
 
 			await step.run(`generated-screen-${i}`, async () => {
 				const result = await generateText({
-					model: groq("moonshotai/kimi-k2-instruct"),
+					model: groq("moonshotai/kimi-k2-instruct") as any,
 					system: GENERATION_SYSTEM_PROMPT,
 					tools: {
 						searchUnsplash: unsplashTool,

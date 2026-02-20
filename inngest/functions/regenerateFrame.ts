@@ -41,7 +41,7 @@ export const regenerateFrame = inngest.createFunction(
       `;
 
 			const result = await generateText({
-				model: groq("moonshotai/kimi-k2-instruct"),
+				model: groq("moonshotai/kimi-k2-instruct") as any,
 				system: GENERATION_SYSTEM_PROMPT,
 				tools: {
 					searchUnsplash: unsplashTool,
