@@ -1,8 +1,8 @@
 import { serve } from "inngest/next";
-import { inngest } from "../../../inngest/client";
-import { helloWorld } from "../../../inngest/functions/helloWorld";
-import { generateScreens } from "../../../inngest/functions/generateScreens";
-import { regenerateFrame } from "../../../inngest/functions/regenerateFrame";
+import { inngest } from "@/inngest/client";
+import { helloWorld } from "@/inngest/functions/helloWorld";
+import { generateScreens } from "@/inngest/functions/generateScreens";
+import { regenerateFrame } from "@/inngest/functions/regenerateFrame";
 
 export const maxDuration = 60;
 
