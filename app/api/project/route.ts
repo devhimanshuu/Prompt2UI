@@ -1,4 +1,3 @@
-// src/app/api/inngest/route.ts
 import { auth } from "@clerk/nextjs/server";
 import prisma from "@/lib/prisma";
 import { NextResponse } from "next/server";
